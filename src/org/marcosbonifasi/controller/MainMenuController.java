@@ -26,4 +26,5 @@ public class MainMenuController implements Initializable {
     public void totitoView(){
         this.mainMenu.totitoView();
     }
+
 }

@@ -1,29 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane cache="true" depthTest="DISABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="anchor-pane" stylesheets="@../resource/styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.marcosbonifasi.controller.MainMenuController">
    <children>
-      <Button layoutX="41.0" layoutY="484.0" mnemonicParsing="false" onAction="#totitoView" styleClass="button-raised" text="Jugar">
+      <Pane depthTest="DISABLE" layoutX="-388.0" layoutY="-356.0" prefHeight="660.0" prefWidth="718.0" rotate="45.0" styleClass="pane-main">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Pane>
+      <Pane depthTest="DISABLE" layoutX="256.0" layoutY="280.0" prefHeight="660.0" prefWidth="718.0" rotate="45.0" styleClass="pane-main">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Pane>
+      <SplitMenuButton alignment="CENTER" layoutX="14.0" layoutY="461.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="46.0" prefWidth="104.0" text="Jugar">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#totitoView" text="Solo" />
+          <MenuItem mnemonicParsing="false" text="Usuarios" />
+        </items>
+         <styleClass>
+            <String fx:value="arrow-button" />
+            <String fx:value="menu-button" />
+            <String fx:value="split-menu-button" />
+         </styleClass>
          <font>
-            <Font name="Snap ITC" size="12.0" />
-         </font></Button>
-      <Pane depthTest="DISABLE" layoutX="-400.0" layoutY="-350.0" prefHeight="660.0" prefWidth="718.0" rotate="45.0" styleClass="pane-main">
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </Pane>
-      <Pane depthTest="DISABLE" layoutX="278.0" layoutY="350.0" prefHeight="660.0" prefWidth="718.0" rotate="45.0" styleClass="pane-main">
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </Pane>
+            <Font name="Vivaldi Italic" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#2c25cc" radius="8.807500000000001" width="16.23" />
+         </effect>
+      </SplitMenuButton>
    </children>
    <opaqueInsets>
       <Insets bottom="300.0" />
    </opaqueInsets>
+   <effect>
+      <InnerShadow />
+   </effect>
 </AnchorPane>

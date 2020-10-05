@@ -7,7 +7,7 @@
     -fx-padding: 0.7em 0.57em;
     -fx-font-size: 14px;
     -jfx-button-type: RAISED;
-    -fx-background-color: rgb(77,102,204);
+    -fx-background-color: #0e3049;
     -fx-pref-width: 200;
     -fx-text-fill: WHITE;
 }
@@ -16,3 +16,32 @@
     -fx-background-color: #33a8ff;
     -fx-background-radius:30px;
 }
+
+.green-pane {
+    -fx-background-color: #278c31;
+    -fx-background-radius:100%;
+}
+
+.brown-pane {
+    -fx-background-color: #7a640d;
+    -fx-background-radius:20%;
+}
+
+ .arrow-button{
+     -fx-background-color: #0e3049 ;
+     -fx-text-fill: #fff;
+     -fx-alignment: center;
+ }
+
+ .label{
+    -fx-border-radius: 10px;
+    -fx-padding: 10px;
+    -fx-font-size: 15px;
+    -fx-background-color: #fff ;
+    -fx-text-fill: #fff;
+    -fx-background-color: #0e3049 ;
+ }
+
+ .anchorp-totito{
+    -fx-background-color: #4de15c;
+ }
